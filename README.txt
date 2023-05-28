@@ -1,5 +1,7 @@
 InternshipReport-EPC
 
+To use the Code simply download the whole repository to your computer and run the R files.
+
 .R Files
 CodeAnalysis: contains all the core analysis concerned with Gross domestic product per capita
 CodeComparison: contains a brief regression to compare the results using different data for the cultural dimensions
@@ -24,6 +26,7 @@ clustermapping.xlsx
   Contains Cluster Abbreviations based on Ordonez-Ponce (2020) http://dx.doi.org/10.1002/sd.2445
   
 /output
-is used to store the xlsx and png files created by the R Scripts
+blanco.txt
+  necesarry file as github does not allow empty folders
 
 
