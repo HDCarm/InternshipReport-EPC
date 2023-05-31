@@ -261,18 +261,18 @@ rm(dataset_names) # deletes the working variable
 #################
 
 # SDG x GDPPC logarithmic transformation differences (might or might not use the smooth variant)
-sdgxloggdpc <- ggplot(World) + aes(log(GDPPC),sdg2020score, color=Income) + 
+sdgxloggdpc <- ggplot(World) + aes(log(GDPPC),sdg2020score) + 
   geom_point() + 
   geom_smooth(method=lm, level=0.95, colour="darkgray") + 
   ylim (40,100)  + 
-  ggtitle("SDG score x log of gross domestic product per capita") +
+  ggtitle("SDG score x log of Gross domestic product per capita") +
   theme_linedraw() +
   theme(text = element_text(family = "Times New Roman"),
         plot.title = element_text(size = 12),
         axis.text = element_text(size = 8),
         axis.title = element_text(size = 10)) 
 
-sdgxgdpc <- ggplot(World) + aes(GDPPC,sdg2020score, color=Income) + 
+sdgxgdpc <- ggplot(World) + aes(GDPPC,sdg2020score) + 
   geom_point() + 
   geom_smooth(method=lm, level=0.95, colour="darkgray") + 
   ylim (40,100) + 
